@@ -1,0 +1,19 @@
+.todoList-container {
+  li {
+    list-style-type: none;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+
+    font-size: 1.6rem;
+
+    border: 1.5px solid rgb(233, 233, 233);
+
+    background-color: white;
+  }
+}
