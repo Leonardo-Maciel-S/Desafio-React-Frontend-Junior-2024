@@ -1,0 +1,29 @@
+@use "./../../index" as index;
+
+.todoList-container {
+  position: relative;
+  background-color: transparent;
+
+  .footerList {
+    position: absolute;
+    left: 1%;
+
+    width: 98%;
+    height: 5px;
+    background-color: white;
+    z-index: 1;
+
+    border-bottom: none;
+  }
+
+  .footerList::after {
+    content: " ";
+    position: absolute;
+    left: 1%;
+    top: 6px;
+
+    width: 98%;
+    height: 5px;
+    background-color: white;
+  }
+}

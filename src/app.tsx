@@ -1,6 +1,6 @@
 import Form from "./components/Form/Form";
 import ToDoList from "./components/ToDoList/ToDoList";
-import "./index.scss";
+import "./_index.scss";
 
 export default function App() {
   return (

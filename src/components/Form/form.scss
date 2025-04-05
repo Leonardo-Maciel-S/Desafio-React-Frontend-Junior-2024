@@ -26,14 +26,6 @@ form {
       cursor: pointer;
     }
 
-    input {
-      outline: none;
-      border: none;
-
-      font-size: 1.6rem;
-      background-color: transparent;
-    }
-
     input::placeholder {
       color: rgb(185, 184, 184);
       font-style: italic;

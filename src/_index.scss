@@ -1,3 +1,5 @@
+$box-shadow-default: 2px 2px 10px rgb(160, 160, 160);
+
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +18,21 @@ button {
   outline: none;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+
+  height: 100%;
+  width: 100%;
+
+  font-size: 1.6rem;
+  background-color: transparent;
+}
+
+input:disabled {
   cursor: pointer;
 }
 
@@ -43,7 +60,7 @@ section {
     width: 100%;
     position: relative;
 
-    box-shadow: 2px 2px 10px rgb(160, 160, 160);
+    box-shadow: $box-shadow-default;
   }
 
   .shadow {
@@ -60,7 +77,7 @@ section {
 
     padding: 30px 0;
 
-    z-index: -1;
+    z-index: -2;
   }
 
   .small-shadow {
@@ -75,6 +92,6 @@ section {
 
     border-radius: 60px;
 
-    z-index: -1;
+    z-index: -2;
   }
 }

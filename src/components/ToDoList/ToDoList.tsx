@@ -3,6 +3,8 @@ import { api } from "../../http/axios";
 
 import TodoItem, { ITodo } from "../TodoItem/TodoItem";
 
+import "./TodoList.scss";
+
 const ToDoList = () => {
   const [ListTodo, setListTodo] = useState<ITodo[]>([]);
 
@@ -15,9 +17,14 @@ const ToDoList = () => {
   }, []);
 
   return (
-    <ul className="todoList-container">
-      {ListTodo.length > 0 && ListTodo.map((todo) => <TodoItem todo={todo} />)}
-    </ul>
+    <div className="todoList-container">
+      <ul>
+        {ListTodo.length > 0 &&
+          ListTodo.map((todo) => <TodoItem key={todo.id} todo={todo} />)}{" "}
+      </ul>
+
+      {ListTodo.length > 0 && <div className="footerList" />}
+    </div>
   );
 };
 

@@ -10,10 +10,35 @@
 
     padding: 20px;
 
-    font-size: 1.6rem;
-
     border: 1.5px solid rgb(233, 233, 233);
 
     background-color: white;
+
+    .btnClose {
+      color: rgb(236, 42, 42);
+      margin-right: 10px;
+      display: none;
+    }
+  }
+
+  li:hover {
+    .btnClose {
+      display: block;
+    }
+  }
+
+  .input-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .cover {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
   }
 }
