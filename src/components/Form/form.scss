@@ -1,0 +1,42 @@
+$test: "red";
+
+form {
+  width: 100%;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px 15px;
+
+    border: 1.5px solid rgb(233, 233, 233);
+
+    background-color: white;
+
+    button {
+      outline: none;
+      border: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+
+      cursor: pointer;
+    }
+
+    input {
+      outline: none;
+      border: none;
+
+      font-size: 1.6rem;
+      background-color: transparent;
+    }
+
+    input::placeholder {
+      color: rgb(185, 184, 184);
+      font-style: italic;
+    }
+  }
+}
